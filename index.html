@@ -151,11 +151,19 @@
             </div>
         </div>
     </div>
-
-
 </div>
 
 <script>
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var threshold = 50; 
+    if (scrollPosition > threshold) {
+        closemenu();
+    }
+});
+
+
+
     var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {

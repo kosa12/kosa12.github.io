@@ -336,10 +336,16 @@ nav .fas{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/background.gif);
+        background-image: url(images/background-smallscreen.gif);
         background-size: cover;
         background-position: center;
     }
+
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     .header-text{
         margin-top: 80%;
         font-size: 16px;
@@ -358,7 +364,6 @@ nav .fas{
 
     nav ul{
         background: #cac9c9;
-        position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
@@ -367,6 +372,20 @@ nav .fas{
         z-index: 2;
         transition: right 0.2s;
     }
+
+    #sidemenu {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background: #cac9c9;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.2s;
+        overflow-y: auto;
+    }
+    
 
     nav ul li{
         display: block;
@@ -393,11 +412,12 @@ nav .fas{
 
     .about-col-2{
         font-size: 14px;
+        text-align: center;
     }
 
     .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
+        font-size: 13px;
+        margin-right: 10px;
     }
 
     .contact-left, .contact-right{
