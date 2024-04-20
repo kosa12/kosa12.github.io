@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosa Matyas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2a17786b85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/image.png" alt="logo" width="300">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" style="color: black;" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" style="color: black;" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer science student</p>
+            <h1>Hi, I'm <span>Kosa Matyas</span></h1>
+
+        </div>
+    </div>
+</div>
+
+<!------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/placeholder.webp">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                </div>
+                <div class="tab-contains active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web</li>
+                        <li><span>UI/UX</span><br>Designing web</li>
+                        <li><span>UI/UX</span><br>Designing web</li>
+                    </ul>
+                </div>
+                <div class="tab-contains" id="experience">
+                    <ul>
+                        <li><span>Internships</span><br>Waiting for my first :) <br>Hopefully this summer</li>
+                    </ul>
+                </div>
+                <div class="tab-contains" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>Universitatea Babes-Bolyai <br> Cluj-Napoca, Cluj</li>
+                        <li><span>2019-2022</span><br>Colegiul National ”Silvania” <br> Zalau, Salaj</li>
+                    </ul>
+                </div>
+                <div class="tab-contains" id="certificates">
+                    <ul>
+                        <li><span>English</span><br>C1 Cambridge <br> 2021</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------portfolio---------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/4.jpg">
+                <div class="layer">
+                    <h3><b>SQUEL - Database Management System</b></h3>
+                    <p>SQUEL is an application based on Java that serves as a Database Management System (DBMS), offering core features for the administration of databases and tables through MongoDB.</p>
+                    <a href="https://github.com/kosa12/SQUEL-MiniDBMS"><i class="fa-brands fa-github fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/1.jpg">
+                <div class="layer">
+                    <h3><b>Typing Speed Game</b></h3>
+                    <p>Typing Speed Game is a web application designed to help users improve their typing speed and accuracy. With random quotes for typing practice and real-time feedback on words per minute (WPM), users can track their progress and enhance their typing skills effortlessly. </p>
+                    <a href="https://github.com/kosa12/typingSpeedGame"><i class="fa-brands fa-github fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2.jpg">
+                <div class="layer">
+                    <h3><b>Multiplayer Chess</b></h3>
+                    <p>This is a simple chess game implemented in Java with a Swing-based graphical user interface. The game includes a chessboard with pieces, and users can interact with the board to move pieces. </p>
+                    <a href="https://github.com/kosa12/MultiplayerChess"><i class="fa-brands fa-github fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/3.jpg">
+                <div class="layer">
+                    <h3><b>Slot Machine</b></h3>
+                    <p>The Slot Machine Game is a cyberpunk themed Java-based application that simulates a virtual slot machine. The project incorporates sound effects, animations, customizable options, and an intuitive user interface. </p>
+                    <a href="https://github.com/kosa12/SlotMachine"><i class="fa-brands fa-github fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kosa03matyas@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/kosa12"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/kosa.matys/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/k%C3%B3sa-m%C3%A1ty%C3%A1s-44211a232/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://dev.to/kosa12"><i class="fa-brands fa-dev"></i></a>
+                    <a href="https://ko-fi.com/kosamatyas"><i class="fa-solid fa-heart"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0px";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIqkLzvmxxseHCsOD6KyMDYeJ8ZZJvXuQ0iKPAjetk87kdq5u2gnqgboh6jcf5Mb2Cbw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
