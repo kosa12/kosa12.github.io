@@ -302,6 +302,7 @@ nav ul li a:hover::after{
 
 .btn.btn2{
     display: inline-block;
+    color: #080808;
     background-color: #bc9999;
 }
 
