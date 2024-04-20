@@ -24,7 +24,6 @@
         </nav>
         <div class="header-text">
             <p>>_Computer science student</p>
-            
             <h1>Hi, I'm <span>Kosa Matyas</span></h1>
 
         </div>
@@ -36,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/placeholder.webp">
+                <img src="images/placeholder.webp" style="box-shadow: 10px 10px rgb(167, 188, 200);">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title"> About me</h1>
@@ -51,19 +50,18 @@
                     <br>~ <b>Bilbo Baggins</b>
                 </p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                    <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                    <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                    <p class="tab-links" onclick="opentab('certificates')"><b>Certificates</b></p>
                 </div>
                 <div class="tab-contains active-tab" id="skills">
                     <ul>
                         <li><span>Programming languages</span> <i class="fa-solid fa-code" style="color: rgb(167, 188, 200);"></i> <br>C/C++<br>C#<br>Java<br>Python<br>Haskell<br>Javascript<br>Assembly</li>
                         <li><span>Frontend Development</span> <i class="fa-brands fa-html5" style="color: rgb(167, 188, 200);"></i><br>HTML/CSS</li>
-                        <li><span>Backend Development</span> <i class="fa-solid fa-gears" style="color: rgb(167, 188, 200);"></i> <br>Node.JS</li>
-                        <li><span>Database</span> <i class="fa-solid fa-database" style="color: rgb(167, 188, 200);"></i> <br>SQL/MSSQL<br>MongoDB</li>
+                        <li><span>Databases</span> <i class="fa-solid fa-database" style="color: rgb(167, 188, 200);"></i> <br>SQL/MSSQL<br>MongoDB</li>
                         <li><span>Devops </span><i class="fa-brands fa-git-alt" style="color: rgb(167, 188, 200);"></i><br>Bash<br>Linux<br>Git</li>
-                        <li><span>Framework </span><i class="fa-brands fa-stack-overflow" style="color: rgb(167, 188, 200);"></i><br>.NET</li>
+                        <li><span>Frameworks </span><i class="fa-brands fa-stack-overflow" style="color: rgb(167, 188, 200);"></i><br>.NET <br>Node.JS</li>
                     </ul>
                 </div>
                 <div class="tab-contains" id="experience">
@@ -73,8 +71,8 @@
                 </div>
                 <div class="tab-contains" id="education">
                     <ul>
-                        <li><span>2022-Current</span><br>Universitatea Babes-Bolyai <i class="fa-solid fa-graduation-cap" style="color: rgb(167, 188, 200);"></i> <br> Cluj-Napoca, Cluj</li>
-                        <li><span>2019-2022</span><br>Colegiul National ”Silvania” <i class="fa-solid fa-school" style="color: rgb(167, 188, 200);"></i><br> Zalau, Salaj</li>
+                        <li><span>2022-Current</span><br>Babes-Bolyai University <i class="fa-solid fa-graduation-cap" style="color: rgb(167, 188, 200);"></i> <br> Cluj-Napoca, Cluj</li>
+                        <li><span>2019-2022</span><br>National High School ”Silvania” <i class="fa-solid fa-school" style="color: rgb(167, 188, 200);"></i><br> Zalau, Salaj</li>
                     </ul>
                 </div>
                 <div class="tab-contains" id="certificates">
@@ -150,14 +148,20 @@
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Kosa Matyas</p>
+    </div>
 </div>
+
+
+
 
 <script>
 window.addEventListener('scroll', function() {
